@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <gs.version>15.2.0</gs.version>
+        <gs.version>15.5.1</gs.version>
     </properties>
 
     <modules>
