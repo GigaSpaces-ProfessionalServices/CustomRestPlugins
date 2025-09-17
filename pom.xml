@@ -3,12 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.gigaspaces.rest.plugins</groupId>
     <artifactId>CustomRestPlugins</artifactId>
-    <name>CustomRestPlugins</name>
     <version>1.0-SNAPSHOT</version>
+    <name>CustomRestPlugins</name>
     <packaging>pom</packaging>
 
     <properties>
-        <gs.version>15.5.1</gs.version>
+        <gigaspaces.version>17.1.2</gigaspaces.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <modules>
@@ -18,7 +21,7 @@
     <repositories>
         <repository>
             <id>org.openspaces</id>
-            <url>http://maven-repository.openspaces.org</url>
+            <url>https://maven-repository.openspaces.org</url>
         </repository>
     </repositories>
 
@@ -26,12 +29,12 @@
         <dependency>
             <groupId>org.gigaspaces</groupId>
             <artifactId>xap-openspaces</artifactId>
-            <version>${gs.version}</version>
+            <version>${gigaspaces.version}</version>
         </dependency>
         <dependency>
             <groupId>com.gigaspaces</groupId>
             <artifactId>xap-admin</artifactId>
-            <version>${gs.version}</version>
+            <version>${gigaspaces.version}</version>
         </dependency>
     </dependencies>
 
@@ -40,10 +43,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
+                <version>3.14.0</version>
             </plugin>
         </plugins>
     </build>
